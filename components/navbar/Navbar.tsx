@@ -18,20 +18,24 @@ const Navbar = () => {
     "
     >
         <div className="flex">
-            <Image 
-            src="/Logo.png"
-            alt='Danog'
-            width={240}
-            height={50}
-            className='object-contain hidden lg:block'
-            />
-            <Image 
-            src="/mobileIcon.png"
-            alt='Danog'
-            width={100}
-            height={30}
-            className='object-contain block lg:hidden'
-            />
+            <Link
+            href="/"
+            >
+                <Image 
+                src="/Logo.png"
+                alt='Danog'
+                width={240}
+                height={50}
+                className='object-contain hidden lg:block'
+                />
+                <Image 
+                src="/mobileIcon.png"
+                alt='Danog'
+                width={100}
+                height={30}
+                className='object-contain block lg:hidden'
+                />
+            </Link>
         </div>
 
         <div className="flex flex-row items-center gap-5">

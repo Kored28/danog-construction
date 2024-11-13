@@ -5,7 +5,6 @@ import { BsBuildingGear } from "react-icons/bs";
 import { IoConstructOutline } from "react-icons/io5";
 import { SiCcleaner } from "react-icons/si";
 import { MdConveyorBelt } from "react-icons/md";
-import { MdOutlineMapsHomeWork } from "react-icons/md";
 
 const ServicesCards = () => {
   return (

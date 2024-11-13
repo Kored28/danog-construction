@@ -3,34 +3,36 @@ import React, { useEffect, useState } from 'react'
 import ServicesCards from './ServicesCards'
 import TestimonalCard from '../home/TestimonalCard';
 
+const items = [
+  {
+    startValue: 0,
+    endValue: 100,
+    desc: "Partners Worldwide",
+    delay: 1.5,
+  },
+  {
+    startValue: 0,
+    endValue: 325,
+    desc: "Projects Completed",
+    delay: 2,
+  },
+  {
+    startValue: 0,
+    endValue: 10,
+    desc: "Years of Experience",
+    delay: 2.5,
+  },
+  {
+    startValue: 0,
+    endValue: 554,
+    desc: "Clients Served",
+    delay: 3,
+  },
+];
+
 const Services = () => {
 
-    const items = [
-        {
-          startValue: 0,
-          endValue: 100,
-          desc: "Partners Worldwide",
-          delay: 1.5,
-        },
-        {
-          startValue: 0,
-          endValue: 325,
-          desc: "Projects Completed",
-          delay: 2,
-        },
-        {
-          startValue: 0,
-          endValue: 10,
-          desc: "Years of Experience",
-          delay: 2.5,
-        },
-        {
-          startValue: 0,
-          endValue: 554,
-          desc: "Clients Served",
-          delay: 3,
-        },
-    ];
+    
   const interval = 5000; // Time in milliseconds for the animation
 
   // Initialize state for each item's count
@@ -87,7 +89,7 @@ const Services = () => {
             "
             >
                 {items.map((item, index) => (
-                    <div className="flex flex-col items-center w-[285px] p-[15px] gap-3">
+                    <div key={item.endValue} className="flex flex-col items-center w-[285px] p-[15px] gap-3">
                         <p className='text-[#0057FF] text-[36px] md:text-[48px]
                         '
                         >
