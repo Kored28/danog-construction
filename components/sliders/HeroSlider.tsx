@@ -50,7 +50,7 @@ const HeroSlider = () => {
   }, [activeIndex, controls1, controls2, controls3, controlsImage1, controlsImage2, controlsImage3])
 
   return (
-    <div className='relative'>
+    <div className='relative max-w-[1440px]'>
       <Swiper 
       spaceBetween={2} 
       effect={'fade'}
@@ -71,9 +71,9 @@ const HeroSlider = () => {
       className="mySwiper flex w-full gap-2"
       >
         <SwiperSlide className='relative' >
-          <motion.div className="bg-hero-one bg-cover bg-center h-[70vh] lg:h-screen" variants={zoomIn({ delay: 1, duration: 6 })} initial="hidden" animate={controlsImage1}>
+          <motion.div className="bg-hero-one bg-cover bg-center max-h-[650px] lg:h-screen" variants={zoomIn({ delay: 1, duration: 6 })} initial="hidden" animate={controlsImage1}>
           </motion.div>
-            <div className='bg-[rgba(0,0,0,0.3)] w-full h-[70vh] lg:h-screen absolute top-0 '>
+            <div className='bg-[rgba(0,0,0,0.3)] w-full max-h-[650px] lg:h-screen absolute top-0 '>
               <div
               className='w-[346px] lg:w-[1114px] h-auto m-[15px] lg:mx-auto flex flex-col gap-3 my-[94px] md:my-[194px]'
               >
@@ -123,9 +123,9 @@ const HeroSlider = () => {
         </SwiperSlide>
 
         <SwiperSlide className="relative">
-          <motion.div className="bg-hero-two bg-cover bg-center h-[70vh] lg:h-screen" variants={zoomIn({ delay: 1, duration: 6 })} initial="hidden" animate={controlsImage2}>
+          <motion.div className="bg-hero-two bg-cover bg-center max-h-[650px] lg:h-screen" variants={zoomIn({ delay: 1, duration: 6 })} initial="hidden" animate={controlsImage2}>
           </motion.div>
-          <div className='bg-[rgba(0,0,0,0.3)] w-full h-[70vh] lg:h-screen absolute top-0'>
+          <div className='bg-[rgba(0,0,0,0.3)] w-full max-h-[650px] lg:h-screen absolute top-0'>
             <div
             className='w-[346px] lg:w-[1114px] h-auto mx-auto flex flex-col items-center justify-center text-center gap-3 my-[94px] md:my-[194px]'
             >
@@ -177,10 +177,10 @@ const HeroSlider = () => {
         </SwiperSlide>
 
         <SwiperSlide className="relative">
-          <motion.div className="bg-hero-three bg-cover h-[70vh] lg:h-screen" 
+          <motion.div className="bg-hero-three bg-cover max-h-[650px] lg:h-screen" 
           variants={zoomIn({ delay: 1, duration: 6 })} initial="hidden" animate={controlsImage3}>
           </motion.div>
-          <div className='bg-[rgba(0,0,0,0.3)] w-full h-[70vh] lg:h-screen absolute top-0'>
+          <div className='bg-[rgba(0,0,0,0.3)] w-full max-h-[650px] lg:h-screen absolute top-0'>
             <div
             className='w-[346px] md:w-[700px] lg:w-[1114px] h-auto mx-[15px] md:mx-auto flex flex-col 
             md:justify-end md:items-end md:text-end gap-3 my-[94px] md:my-[194px]'

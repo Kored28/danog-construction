@@ -12,7 +12,8 @@ const AboutCard = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
   return (
-    <div className='flex flex-col lg:flex-row gap-[50px] lg:gap-5 py-[100px] px-[20px] lg:px-[109px]' ref={ref}>
+    <div className='flex flex-col lg:flex-row gap-[50px] lg:gap-5 py-[100px] px-[20px] lg:px-[109px] max-w-[1440px]' 
+    ref={ref}>
         <motion.div 
             variants={fadeIn({ direction: "right", type: "", delay: 1, duration: 1 })}
             initial="hidden"

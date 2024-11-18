@@ -4,8 +4,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col bg-[#232427] w-full'>
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-4 lg:px-[125px] py-[100px] border-b-[1px] border-[#333]">
+    <div className='flex flex-col bg-[#232427] max-w-[1440px]'>
+        <div className="flex flex-col items-center lg:flex-row gap-10 lg:gap-4 lg:px-[125px] py-[100px] border-b-[1px] border-[#333]">
             <div className="flex flex-col gap-2 px-[15px] mr-[15px]">
                 <Image 
                     src="/Logo-footer.png"

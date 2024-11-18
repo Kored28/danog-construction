@@ -4,7 +4,7 @@ import OurTeam from './OurTeam'
 
 const About = () => {
   return (
-    <div>
+    <div className='max-w-[1440px]'>
         <div className="flex bg-about-hero bg-cover bg-center bg-no-repeat
         w-full h-[35vh] md:h-[45vh] lg:h-[55vh]
         "

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>
+    <div className='flex flex-col items-center w-full'>
         <div className="relative w-full h-[350px]">
             <div className="overflow-hidden bg-none w-full h-full">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31803.715212421906!2d7.012710214778532!3d4.86157064891061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d2740493eb2b%3A0x4506b5c52eff762e!2sRumuodara%2C%20Port%20Harcourt%20500102%2C%20Rivers!5e0!3m2!1sen!2sng!4v1730549644643!5m2!1sen!2sng" 

@@ -18,16 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased max-w-[1365px] mx-auto">
-        <div className="flex flex-col">
-          <div className="flex">
-            <Navbar />
-          </div>
-          <div>
+      <body className="antialiased">
+        <div className="flex flex-col max-w-[1440px] mx-auto">
+          <Navbar />
+          <div className="w-full">
             {children}
           </div>
           <Footer />
         </div>
+
       </body>
     </html>
   );

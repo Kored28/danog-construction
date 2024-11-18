@@ -9,7 +9,7 @@ import BlogCard from "@/components/home/BlogCard";
 export default async function Home() {
   
   return (
-    <>
+    <div className="max-w-[1440px]">
       <HeroSlider/>
       <AboutCard/>
       <ServiceCard/>
@@ -17,6 +17,6 @@ export default async function Home() {
       <ProjectCard />
       <TestimonalCard />
       <BlogCard />
-    </>
+    </div>
   );
 }
