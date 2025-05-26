@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
-
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 
 
@@ -18,7 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <div className="flex flex-col max-w-[1440px] mx-auto">
+          <Navbar />
+          <div className="w-full">
+            {children}
+          </div>
+          <Footer />
+        </div>
+
       </body>
     </html>
   );

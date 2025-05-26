@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.css";
-
 
 
 
@@ -18,7 +16,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <div className="flex flex-col max-w-[1440px] mx-auto">
+          
+          <div className="w-full">
+            {children}
+          </div>
+          
+        </div>
+
       </body>
     </html>
   );

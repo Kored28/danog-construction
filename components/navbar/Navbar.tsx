@@ -13,9 +13,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex items-center max-w-[1440px]'>
-        <div className="flex items-center justify-between w-full h-[60px] md:h-[90px]
-        mx-2 lg:mx-[103px] bg-white
+    <div className='flex items-center fixed w-full max-w-[1440px] z-[9999]'>
+        <div className="flex items-center justify-between w-full h-[90px]
+        px-2 lg:px-[103px] bg-white
         "
         >
             <div>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <ul className={`flex flex-col lg:flex-row gap-3 absolute lg:relative top-[60.5px] lg:top-0
                 left-0 right-0 w-full bg-white lg:bg-transparent
                 overflow-hidden transition-[max-height] lg:transition-none duration-300 ease-in-out
-                ${toggle ? "max-h-64" : "max-h-0 lg:max-h-[60px]"}
+                ${toggle ? "max-h-80 " : "max-h-0 lg:max-h-[60px]"}
                 `}
                 >
                     <li className='text-sm mt-[16px] lg:mt-0 text-[#263a4f] px-[20px] font-semibold 
