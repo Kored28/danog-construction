@@ -1,3 +1,5 @@
+import AdminNavbar from "@/components/navbar/AdminNavbar";
+import AdminSidebar from "@/components/navbar/AdminSidebar";
 import type { Metadata } from "next";
 
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   icons: "/logo-icon.jpg"
 };
 
-export default function RootLayout({
+export default function AdminRootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -16,9 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <div className="flex flex-col max-w-[1440px] mx-auto">
-          
-          <div className="w-full">
+        <div className="flex max-w-[1440px]">
+          <AdminSidebar/>
+          <div className="w-full bg-[#f2f2f2] flex flex-col gap-[30px]">
+            <AdminNavbar />
             {children}
           </div>
           
